@@ -5,21 +5,21 @@
 class Flmnt < Formula
   desc "The developer CLI for the flmnt event-stream memory platform"
   homepage "https://flmnt.dev"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mmmnt/flmnt-cli/releases/download/v0.1.3/flmnt_0.1.3_darwin_amd64.tar.gz"
-      sha256 "d474b40b2207a5e91ea22c571815c4ab62d08b9ccc843613771efa2b18303e91"
+      url "https://github.com/mmmnt/flmnt-cli/releases/download/v0.1.4/flmnt_0.1.4_darwin_amd64.tar.gz"
+      sha256 "686d9de2f4605915a5e5f1672b37113182676cf2eaa6b4c0cf6d50c8c4966a6c"
 
       define_method(:install) do
         bin.install "flmnt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mmmnt/flmnt-cli/releases/download/v0.1.3/flmnt_0.1.3_darwin_arm64.tar.gz"
-      sha256 "a058301b2da8b6cb574f6580c2ceae6363bc53e1a8887fcfad020c97688af48e"
+      url "https://github.com/mmmnt/flmnt-cli/releases/download/v0.1.4/flmnt_0.1.4_darwin_arm64.tar.gz"
+      sha256 "40fe31cc172b524446970bf6b65c2d3074294edb08cdc5b3a6ec91ccf6119e74"
 
       define_method(:install) do
         bin.install "flmnt"
@@ -29,15 +29,15 @@ class Flmnt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mmmnt/flmnt-cli/releases/download/v0.1.3/flmnt_0.1.3_linux_amd64.tar.gz"
-      sha256 "fc00e26f467a1b7925d554deb6c49d0776806d55afc3271c6bcec530d57f1940"
+      url "https://github.com/mmmnt/flmnt-cli/releases/download/v0.1.4/flmnt_0.1.4_linux_amd64.tar.gz"
+      sha256 "28b4e55c3ab6191fffc61100978ee8415717c4f1d712c3384ac6e905e44a90ff"
       define_method(:install) do
         bin.install "flmnt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mmmnt/flmnt-cli/releases/download/v0.1.3/flmnt_0.1.3_linux_arm64.tar.gz"
-      sha256 "e270305de8849e8212d41adeed1bc11b8cc44ee9eb4766c26aeb671fd79f256b"
+      url "https://github.com/mmmnt/flmnt-cli/releases/download/v0.1.4/flmnt_0.1.4_linux_arm64.tar.gz"
+      sha256 "93b6aca843a83f6ad7357930d0682e6dce07be094f1f2f8a21b4c08592a6eafb"
       define_method(:install) do
         bin.install "flmnt"
       end
